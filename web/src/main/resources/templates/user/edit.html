@@ -1,0 +1,55 @@
+<script th:src="@{/scripts/user/edit.js}"></script>
+<form id="saveForm" method="post">
+    <input type="hidden" name="userid" id="userid" th:value="${user.userid}"/>
+    <input type="hidden" name="password" id="password" th:value="${user.password}"/>
+<div class="addInfBtn" >
+    <h3 class="itemTit"><span>用户信息</span></h3>
+    <table class="addNewInfList">
+        <tr>
+            <th>名称</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" th:value="${user.username}" id="name" name="name" maxlength="16" />
+                <span class="tipStar f-left">*</span>
+            </td>
+            <th>邮箱</th>
+            <td>
+                <input class="inp-list w-200 clear-mr f-left" type="text"  th:value="${user.email}" id="email" name="email"  maxlength="120" />
+                <span class="tipStar f-left">*</span>
+            </td>
+        </tr>
+        <tr>
+            <th>部门</th>
+            <td width="240">
+                <div class="selectDownMode f-left w-206">
+                    <input type="text" th:if="${user.postion!=null}" th:value="${user.postion}"/>
+                    <input type="text" th:if="${user.postion==null}" value="请选择"/>
+                    <select class="selectMode" name="postion" id="postio">
+                        <option value="">请选择</option>
+                        <option value="admin">root</option>
+                        <option value="po">采购</option>
+                        <option value="so">销售</option>
+                        <option value="storage">库存</option>
+                    </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th>手机号码</th>
+            <td>
+                <input class="inp-list w-200 clear-mr f-left" type="text"  th:value="${user.usercellphone}" id="usercellphone" name="usercellphone"  maxlength="120" />
+                <span class="tipStar f-left">*</span>
+            </td>
+            <!--<th>密码更换</th>-->
+            <!--<td>-->
+                <!--<input class="inp-list w-200 clear-mr f-left" type="text"  th:value="${user.password}" id="password" name="password"  maxlength="120" />-->
+                <!--<span class="tipStar f-left">*</span>-->
+            <!--</td>-->
+        </tr>
+    </table>
+    <div class="bottomBtnBox">
+        <a class="btn-93X38 saveBtn" href="javascript:void(0)">确定</a>
+        <a class="btn-93X38 backBtn" href="javascript:closeDialog(0)">返回</a>
+    </div>
+</div>
+
+</form>

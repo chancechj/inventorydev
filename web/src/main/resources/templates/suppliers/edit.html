@@ -1,0 +1,70 @@
+<script th:src="@{/scripts/suppliers/edit.js}"></script>
+<form id="saveForm" method="post">
+    <!--<input type="hidden" name="id" id="id" th:value="${user.id}"/>-->
+    <!--<input type="hidden" name="password" id="password" th:value="${user.password}"/>-->
+<div class="addInfBtn" >
+    <h3 class="itemTit"><span>供应商信息</span></h3>
+    <table class="addNewInfList">
+        <tr>
+            <th>供应商名称</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" th:value="${suppliers.suppliersname}" id="suppliersname" name="suppliersname" maxlength="16" />
+                <span class="tipStar f-left">*</span>
+            </td>
+            <th>供应商负责人</th>
+            <td>
+                <input class="inp-list w-200 clear-mr f-left" type="text"  th:value="${suppliers.supplierslegal}" id="supplierslegal" name="supplierslegal"  maxlength="120" />
+                <span class="tipStar f-left">*</span>
+            </td>
+        </tr>
+        <tr>
+            <th>默认折扣</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" th:value="${suppliers.suppliersdefaultdiscount}" id="suppliersdefaultdiscount" name="suppliersdefaultdiscount" maxlength="16" />
+                <span class="tipStar f-left">*</span>
+            </td>
+            <th>电话</th>
+            <td>
+                <input class="inp-list w-200 clear-mr f-left" type="text"  th:value="${suppliers.suppliersphone}" id="suppliersphone" name="suppliersphone"  maxlength="120" />
+                <span class="tipStar f-left">*</span>
+            </td>
+        </tr>
+        <tr>
+            <th>手机号码</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" th:value="${suppliers.supplierscellphone}" id="supplierscellphone" name="supplierscellphone" maxlength="16" />
+                <span class="tipStar f-left">*</span>
+            </td>
+            <th>传真</th>
+            <td>
+                <input class="inp-list w-200 clear-mr f-left" type="text"  th:value="${suppliers.suppliersfax}" id="suppliersfax" name="suppliersfax"  maxlength="120" />
+                <span class="tipStar f-left">*</span>
+            </td>
+        </tr>
+        <tr>
+            <th>邮箱</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" th:value="${suppliers.suppliersemail}" id="suppliersemail" name="suppliersemail" maxlength="16" />
+                <span class="tipStar f-left">*</span>
+            </td>
+            <th>银行账户</th>
+            <td>
+                <input class="inp-list w-200 clear-mr f-left" type="text"  th:value="${suppliers.suppliersbankaccount}" id="suppliersbankaccount" name="suppliersbankaccount"  maxlength="120" />
+                <span class="tipStar f-left">*</span>
+            </td>
+        </tr>
+        <tr>
+            <th>开户行</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" th:value="${suppliers.suppliersdeposit}" id="suppliersdeposit" name="suppliersdeposit" maxlength="16" />
+                <span class="tipStar f-left">*</span>
+            </td>
+        </tr>
+    </table>
+    <div class="bottomBtnBox">
+        <a class="btn-93X38 saveBtn" href="javascript:void(0)">确定</a>
+        <a class="btn-93X38 backBtn" href="javascript:closeDialog(0)">返回</a>
+    </div>
+</div>
+
+</form>

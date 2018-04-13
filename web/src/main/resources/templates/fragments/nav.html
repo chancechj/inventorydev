@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div th:fragment="nav">
+
+    <div class="columnLeftMenu">
+
+        <h6 ><span class="f-right"></span>系统管理</h6>
+        <ul >
+            <li><a th:classappend="${page == 'company/index' ? 'currentPageNav' : ''}" th:href="@{/company/index}">公司信息</a></li>
+            <li><a th:classappend="${page == 'department/index' ? 'currentPageNav' : ''}" th:href="@{/department/index}">部门信息</a></li>
+            <li><a th:classappend="${page == 'user/index' ? 'currentPageNav' : ''}" th:href="@{/user/index}">员工管理</a></li>
+            <li><a th:classappend="${page == 'datacopy/index' ? 'currentPageNav' : ''}" th:href="@{/datacopy/index}">数据备份</a></li>
+            <li><a th:classappend="${page == 'goods/index' ? 'currentPageNav' : ''}" th:href="@{/goods/index}">商品管理</a></li>
+            <li><a th:classappend="${page == 'suppliers/index' ? 'currentPageNav' : ''}" th:href="@{/suppliers/index}">供应商管理</a></li>
+            <li><a th:classappend="${page == 'warehouse/index' ? 'currentPageNav' : ''}" th:href="@{/warehouse/index}">仓库管理</a></li>
+        </ul>
+
+        <h6 ><span class="f-right"></span>采购管理</h6>
+        <ul >
+            <li><a th:classappend="${page == 'department/index' ? 'currentPageNav' : ''}" th:href="@{/poreq/index}">采购申请单</a></li>
+            <li><a th:classappend="${page == 'role/index' ? 'currentPageNav' : ''}" th:href="@{/po/index}">采购订单</a></li>
+            <li><a th:classappend="${page == 'user/index' ? 'currentPageNav' : ''}" th:href="@{/po/index}">采购退货单</a></li>
+        </ul>
+
+        <h6 ><span class="f-right"></span>销售管理</h6>
+        <ul >
+            <li><a th:classappend="${page == 'department/index' ? 'currentPageNav' : ''}" th:href="@{/so/index}">销售订单</a></li>
+            <li><a th:classappend="${page == 'role/index' ? 'currentPageNav' : ''}" th:href="@{/soslip/index}">销售单</a></li>
+            <li><a th:classappend="${page == 'user/index' ? 'currentPageNav' : ''}" th:href="@{/soslip/index}">销售退货单</a></li>
+        </ul>
+
+        <h6 ><span class="f-right"></span>库存管理</h6>
+        <ul >
+            <li><a th:classappend="${page == 'department/index' ? 'currentPageNav' : ''}" th:href="@{/storage/index}">期初库存</a></li>
+            <li><a th:classappend="${page == 'department/index' ? 'currentPageNav' : ''}" th:href="@{/storage/index}">出库单</a></li>
+            <li><a th:classappend="${page == 'role/index' ? 'currentPageNav' : ''}" th:href="@{/storage/index}">入库单</a></li>
+            <li><a th:classappend="${page == 'user/index' ? 'currentPageNav' : ''}" th:href="@{/storage/index}">盘点单</a></li>
+            <li><a th:classappend="${page == 'user/index' ? 'currentPageNav' : ''}" th:href="@{/storage/index}">调拨单</a></li>
+        </ul>
+
+        <h6 ><span class="f-right"></span>报表管理</h6>
+        <ul >
+            <li><a th:classappend="${page == 'department/index' ? 'currentPageNav' : ''}" th:href="@{/department/index}">商品采购表</a></li>
+            <li><a th:classappend="${page == 'role/index' ? 'currentPageNav' : ''}" th:href="@{/role/index}">商品销售表</a></li>
+            <li><a th:classappend="${page == 'user/index' ? 'currentPageNav' : ''}" th:href="@{/user/index}">进销存报表</a></li>
+        </ul>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<script th:src="@{/scripts/goods/new.js}"></script>
+<form id="saveForm" action="./save" method="post">
+    <table class="addNewInfList">
+        <tr>
+            <th>商品名称</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" name="goodname" id="goodname" maxlength="32" />
+                <span class="tipStar f-left">*</span>
+            </td>
+            <th>商品类型</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" name="goodtype" id="goodtype" maxlength="32" />
+                <span class="tipStar f-left">*</span>
+            </td>
+        </tr>
+        <tr>
+            <th>价钱单位</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" name="goodunit" id="goodunit" maxlength="32" />
+                <span class="tipStar f-left">*</span>
+            </td>
+            <th>采购单价</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" name="goodpurchase" id="goodpurchase" maxlength="32" />
+                <span class="tipStar f-left">*</span>
+            </td>
+        </tr>
+        <tr>
+            <th>批发单价</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" name="goodtrade" id="goodtrade" maxlength="32" />
+                <span class="tipStar f-left">*</span>
+            </td>
+            <th>零售单价</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" name="goodretail" id="goodretail" maxlength="32" />
+                <span class="tipStar f-left">*</span>
+            </td>
+        </tr>
+    </table>
+    <div class="bottomBtnBox">
+        <a class="btn-93X38 saveBtn" href="javascript:void(0)">确定</a>
+        <a class="btn-93X38 backBtn" href="javascript: closeDialog()">返回</a>
+    </div>
+</form>

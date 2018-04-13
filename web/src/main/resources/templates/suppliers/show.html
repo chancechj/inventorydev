@@ -1,0 +1,47 @@
+<div class="addInfBtn">
+    <h3 class="itemTit"><span>供应商信息</span></h3>
+    <table class="addNewInfList">
+        <tr>
+            <th>供应商名称</th>
+            <td width="240"><input class="inp-list w-200 clear-mr f-left" type="text" th:value="${suppliers.suppliersname}"
+                                   readonly="true"/></td>
+            <th>供应商负责人</th>
+            <td><input class="inp-list w-200 clear-mr f-left" type="text" th:value="${suppliers.supplierslegal}" readonly="true"/>
+            </td>
+        </tr>
+        <tr>
+            <th>默认折扣</th>
+            <td width="240"><input class="inp-list w-200 clear-mr f-left" type="text" th:value="${suppliers.suppliersdefaultdiscount}"
+                                   readonly="true"/></td>
+            <th>电话</th>
+            <td><input class="inp-list w-200 clear-mr f-left" type="text" th:value="${suppliers.suppliersphone}" readonly="true"/>
+            </td>
+        </tr>
+        <tr>
+            <th>手机号码</th>
+            <td width="240"><input class="inp-list w-200 clear-mr f-left" type="text" th:value="${suppliers.supplierscellphone}"
+                                   readonly="true"/></td>
+            <th>传真</th>
+            <td><input class="inp-list w-200 clear-mr f-left" type="text" th:value="${suppliers.suppliersfax}" readonly="true"/>
+            </td>
+        </tr>
+        <tr>
+            <th>邮箱</th>
+            <td width="240"><input class="inp-list w-200 clear-mr f-left" type="text" th:value="${suppliers.suppliersemail}"
+                                   readonly="true"/></td>
+            <th>银行账户</th>
+            <td><input class="inp-list w-200 clear-mr f-left" type="text" th:value="${suppliers.suppliersbankaccount}" readonly="true"/>
+            </td>
+        </tr>
+        <tr>
+            <th>开户行</th>
+            <td width="240"><input class="inp-list w-200 clear-mr f-left" type="text" th:value="${suppliers.suppliersdeposit}"
+                                   readonly="true"/></td>
+        </tr>
+
+
+    </table>
+    <div class="bottomBtnBox">
+        <a class="btn-93X38 backBtn" href="javascript:closeDialog(0)">返回</a>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<script th:src="@{/scripts/warehouse/edit.js}"></script>
+<form id="saveForm" method="post">
+    <!--<input type="hidden" name="id" id="id" th:value="${user.id}"/>-->
+    <!--<input type="hidden" name="password" id="password" th:value="${user.password}"/>-->
+<div class="addInfBtn" >
+    <h3 class="itemTit"><span>仓库信息</span></h3>
+    <table class="addNewInfList">
+        <tr>
+            <th>仓库名</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" th:value="${warehouse.storagename}" id="storagename" name="storagename" maxlength="16" />
+                <span class="tipStar f-left">*</span>
+            </td>
+        </tr>
+        <tr>
+            <th>负责区域</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" th:value="${warehouse.storagearea}" id="storagearea" name="storagearea" maxlength="16" />
+                <span class="tipStar f-left">*</span>
+            </td>
+        </tr>
+    </table>
+    <div class="bottomBtnBox">
+        <a class="btn-93X38 saveBtn" href="javascript:void(0)">确定</a>
+        <a class="btn-93X38 backBtn" href="javascript:closeDialog(0)">返回</a>
+    </div>
+</div>
+
+</form>

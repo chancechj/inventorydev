@@ -1,0 +1,70 @@
+<script th:src="@{/scripts/goods/edit.js}"></script>
+<form id="saveForm" method="post">
+    <!--<input type="hidden" name="id" id="id" th:value="${user.id}"/>-->
+    <!--<input type="hidden" name="password" id="password" th:value="${user.password}"/>-->
+<div class="addInfBtn" >
+    <h3 class="itemTit"><span>商品信息</span></h3>
+    <table class="addNewInfList">
+        <tr>
+            <th>商品名称</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" th:value="${good.goodname}" id="goodname" name="goodname" maxlength="16" />
+                <span class="tipStar f-left">*</span>
+            </td>
+            <th>商品单位</th>
+            <td>
+                <input class="inp-list w-200 clear-mr f-left" type="text"  th:value="${good.goodunit}" id="goodunit" name="goodunit"  maxlength="120" />
+                <span class="tipStar f-left">*</span>
+            </td>
+        </tr>
+        <tr>
+            <th>采购单价</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" th:value="${good.goodpurchase}" id="goodpurchase" name="goodpurchase" maxlength="16" />
+                <span class="tipStar f-left">*</span>
+            </td>
+            <th>批发单价</th>
+            <td>
+                <input class="inp-list w-200 clear-mr f-left" type="text"  th:value="${good.goodtrade}" id="goodtrade" name="goodtrade"  maxlength="120" />
+                <span class="tipStar f-left">*</span>
+            </td>
+        </tr>
+        <tr>
+            <th>零售单价</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" th:value="${good.goodretail}" id="goodretail" name="goodretail" maxlength="16" />
+                <span class="tipStar f-left">*</span>
+            </td>
+        </tr>
+        <tr>
+            <th>创建人</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" th:value="${good.createman}" id="createman" name="createman" maxlength="16" />
+                <span class="tipStar f-left">*</span>
+            </td>
+            <th>创建日期</th>
+            <td>
+                <input class="inp-list w-200 clear-mr f-left" type="text"  th:value="${good.createdate}" id="createdate" name="createdeate"  maxlength="120" />
+                <span class="tipStar f-left">*</span>
+            </td>
+        </tr>
+        <tr>
+            <th>最后更改人</th>
+            <td width="240">
+                <input class="inp-list w-200 clear-mr f-left" type="text" th:value="${good.lasteditman}" id="lasteditman" name="lasteditman" maxlength="16" />
+                <span class="tipStar f-left">*</span>
+            </td>
+            <th>最后更改日期</th>
+            <td>
+                <input class="inp-list w-200 clear-mr f-left" type="text"  th:value="${good.lasteditdete}" id="lasteditdete" name="lasteditdate"  maxlength="120" />
+                <span class="tipStar f-left">*</span>
+            </td>
+        </tr>
+    </table>
+    <div class="bottomBtnBox">
+        <a class="btn-93X38 saveBtn" href="javascript:void(0)">确定</a>
+        <a class="btn-93X38 backBtn" href="javascript:closeDialog(0)">返回</a>
+    </div>
+</div>
+
+</form>
